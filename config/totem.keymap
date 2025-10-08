@@ -62,7 +62,7 @@
        &kp B           &kp Y           &kp O        &kp U             &kp APOS     &kp LS(SQT)  &kp L          &kp D        &kp W            &kp V
        &mt LEFT_WIN C  &mt LEFT_ALT I  &mt LCTRL E  &mt LEFT_SHIFT A  &kp COMMA    &kp DOT      &mt RSHIFT H   &mt RCTRL T  &mt RIGHT_ALT S  &mt RIGHT_GUI N
 &kp Q  &kp G           &kp X           &kp J        &kp K             &kp MINUS    &kp SLASH    &kp R          &kp M        &kp F            &kp P            &kp Z
-                                       &mo 2        &kp TAB           &kp SPACE    &kp RET      &kp BACKSPACE  &mo 1
+                                       &mo 2        &lt 2 TAB         &kp SPACE    &kp RET      &kp BACKSPACE  &mo 1
             >;
 
             label = "base";
@@ -79,12 +79,12 @@
             label = "NUMSYM";
         };
 
-        layer_2 {
+        Nav {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp HOME          &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp END
-        &trans  &trans  &trans  &trans  &trans    &kp LS(LC(LEFT))  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LS(LC(RIGHT))
-&trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans        &trans    &trans         &trans             &trans
-                        &trans  &trans  &trans    &trans            &trans        &trans
+                             &kp LS(LA(LG(KP_NUMBER_4)))  &kp LS(LA(LG(KP_NUMBER_3)))  &kp LS(LA(LG(KP_NUMBER_2)))  &kp LS(LA(LG(KP_NUMBER_1)))  &kp LS(LA(LG(KP_NUMBER_0)))    &kp HOME          &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp END
+                             &trans                       &trans                       &kp LS(TAB)                  &kp TAB                      &kp LA(SPACE)                  &kp LS(LC(LEFT))  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LS(LC(RIGHT))
+&kp LS(LA(LG(KP_NUMBER_5)))  &trans                       &trans                       &trans                       &trans                       &trans                         &trans            &trans        &trans    &trans         &trans             &trans
+                                                                                       &trans                       &trans                       &trans                         &trans            &kp LEFT_WIN  &trans
             >;
         };
     };
