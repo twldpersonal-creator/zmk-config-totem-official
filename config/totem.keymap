@@ -56,6 +56,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        Fslash_alt_Bslash: Fslash_alt_Bslash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FSLASH_ALT_BSLASH";
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        Lbrkt_alt_Rbrkt: Lbrkt_alt_Rbrkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LBRKT_ALT_RBRKT";
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
     };
 
     keymap {
@@ -70,10 +88,10 @@
 
         Base_layer {
             bindings = <
-       &kp B           &kp Y           &kp O        &kp U             &kp APOS     &kp LS(SQT)  &kp L          &kp D        &kp W            &kp V
-       &mt LEFT_WIN C  &mt LEFT_ALT I  &mt LCTRL E  &mt LEFT_SHIFT A  &kp COMMA    &kp DOT      &mt RSHIFT H   &mt RCTRL T  &mt RIGHT_ALT S  &mt RIGHT_GUI N
-&kp Q  &kp G           &kp X           &kp J        &kp K             &kp MINUS    &kp SLASH    &kp R          &kp M        &kp F            &kp P            &kp Z
-                                       &mo 2        &lt 3 TAB         &kp SPACE    &kp RET      &kp BACKSPACE  &mo 1
+       &kp B           &kp Y           &kp O        &kp U             &kp APOS     &Lpar_shift_Rpar  &kp L          &kp D        &kp W            &kp V
+       &mt LEFT_WIN C  &mt LEFT_ALT I  &mt LCTRL E  &mt LEFT_SHIFT A  &kp COMMA    &kp DOT           &mt RSHIFT H   &mt RCTRL T  &mt RIGHT_ALT S  &mt RIGHT_GUI N
+&kp Q  &kp G           &kp X           &kp J        &kp K             &kp MINUS    &kp SLASH         &kp R          &kp M        &kp F            &kp P            &kp Z
+                                       &mo 2        &lt 3 TAB         &kp SPACE    &kp RET           &kp BACKSPACE  &mo 1
             >;
 
             label = "base";
