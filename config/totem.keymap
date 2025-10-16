@@ -22,10 +22,9 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <100>;
-    global-quick-tap;
+    quick-tap-ms = <150>;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <210>;
 };
 
 / {
@@ -50,6 +49,11 @@
         blt_atmpt_1 {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <22 23 24 25 32 33 34>;
+        };
+
+        pinky_ESC {
+            bindings = <&kp ESCAPE>;
+            key-positions = <20 31>;
         };
     };
 
@@ -97,7 +101,7 @@
        &kp B           &kp Y           &kp O        &kp U             &kp APOS     &Lpar_shift_Rpar  &kp L          &kp D        &kp W            &kp V
        &mt LEFT_WIN C  &mt LEFT_ALT I  &mt LCTRL E  &mt LEFT_SHIFT A  &kp COMMA    &kp DOT           &mt RSHIFT H   &mt RCTRL T  &mt RIGHT_ALT S  &mt RIGHT_GUI N
 &kp Q  &kp G           &kp X           &kp J        &kp K             &kp MINUS    &kp SLASH         &kp R          &kp M        &kp F            &kp P            &kp Z
-                                       &mo 2        &lt 3 TAB         &kp SPACE    &kp RET           &kp BACKSPACE  &mo 1
+                                       &mo 2        &kp SPACE         &lt 3 TAB    &kp RET           &kp BACKSPACE  &mo 1
             >;
 
             label = "base";
