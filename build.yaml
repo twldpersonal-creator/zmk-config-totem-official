@@ -3,4 +3,6 @@ include:
     shield: totem_left
   - board: seeeduino_xiao_ble
     shield: totem_right
+  - board: seeeduino_xiao_ble
+    shield: settings_reset #added to reset all persistant settings to attempt to resolve bluetooth connectivity issues
 # there is no settingsreset (needed) for the XIAO
