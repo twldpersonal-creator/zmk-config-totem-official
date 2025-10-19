@@ -143,10 +143,10 @@
 
         game {
             bindings = <
-         &kp N4     &kp Q  &kp N1  &kp E      &kp R     &trans  &trans  &trans  &trans  &trans
-         &kp LSHFT  &kp A  &kp W   &kp D      &kp N2    &trans  &trans  &trans  &trans  &trans
-&kp TAB  &kp M      &kp X  &kp S   &kp C      &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                           &kp N3  &kp SPACE  &kp Z     &trans  &trans  &trans
+         &kp N4     &kp NUMBER_1  &kp W   &kp E      &kp R     &trans  &trans  &trans  &trans  &trans
+         &kp LSHFT  &kp A         &kp S   &kp D      &kp N2    &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp M      &kp X         &kp Q   &kp C      &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+                                  &kp N3  &kp SPACE  &kp Z     &trans  &trans  &trans
             >;
         };
     };
