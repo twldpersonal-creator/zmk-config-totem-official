@@ -60,6 +60,11 @@
             bindings = <&to 0>;
             key-positions = <32 33 34>;
         };
+
+        emacs_cmd {
+            bindings = <&kp LC(X)>;
+            key-positions = <4 3>;
+        };
     };
 
     behaviors {
