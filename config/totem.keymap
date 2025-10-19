@@ -46,14 +46,19 @@
             key-positions = <35 5>;
         };
 
-        blt_atmpt_1 {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <22 23 24 25 32 33 34>;
-        };
-
         pinky_ESC {
             bindings = <&kp ESCAPE>;
             key-positions = <20 31>;
+        };
+
+        search {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <6 7 8>;
+        };
+
+        home {
+            bindings = <&to 0>;
+            key-positions = <32 33 34>;
         };
     };
 
@@ -127,12 +132,21 @@
             >;
         };
 
-        layer_3 {
+        layer_select {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans
+        &trans  &trans  &trans  &tog 4  &trans    &trans  &trans      &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &bt BT_NXT  &trans
+            >;
+        };
+
+        game {
+            bindings = <
+         &kp N4     &kp Q  &kp N1  &kp E      &kp R     &trans  &trans  &trans  &trans  &trans
+         &kp LSHFT  &kp A  &kp W   &kp D      &kp N2    &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp M      &kp X  &kp S   &kp C      &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+                           &kp N3  &kp SPACE  &kp Z     &trans  &trans  &trans
             >;
         };
     };
