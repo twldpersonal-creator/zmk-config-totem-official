@@ -89,6 +89,24 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
         };
+
+        period_LALT_colon: period_LALT_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERIOD_LALT_COLON";
+            bindings = <&kp PERIOD>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        comma_alt_semi: comma_alt_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_ALT_SEMI";
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
     };
 
     keymap {
@@ -143,9 +161,9 @@
 
         game {
             bindings = <
-         &kp N4     &kp NUMBER_1  &kp W   &kp E      &kp R     &trans  &trans  &trans  &trans  &trans
-         &kp LSHFT  &kp A         &kp S   &kp D      &kp N2    &trans  &trans  &trans  &trans  &trans
-&kp TAB  &kp M      &kp X         &kp Q   &kp C      &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+         &kp N4     &kp NUMBER_1  &kp Q   &kp E      &kp R     &trans  &trans  &trans  &trans  &trans
+         &kp LSHFT  &kp A         &kp W   &kp D      &kp N2    &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp M      &kp X         &kp S   &kp C      &kp B     &trans  &trans  &trans  &trans  &trans  &trans
                                   &kp N3  &kp SPACE  &kp Z     &trans  &trans  &trans
             >;
         };
