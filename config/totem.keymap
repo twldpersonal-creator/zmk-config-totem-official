@@ -65,6 +65,11 @@
             bindings = <&kp LC(X)>;
             key-positions = <4 3>;
         };
+
+        TLYR-BLTH_CTRL {
+            bindings = <&to 5>;
+            key-positions = <32 33 34 35 36 37>;
+        };
     };
 
     behaviors {
@@ -137,10 +142,10 @@
 
         Number_Symbol {
             bindings = <
-        &kp MINUS  &kp LS(STAR)  &kp LS(DLLR)  &kp LS(POUND)  &kp LBKT    &kp RBKT  &kp LS(EXCL)  &kp LS(PRCNT)  &kp EQUAL  &kp LS(EQUAL)
-        &kp N9     &kp N3        &kp N2        &kp N1         &kp N4      &kp N6    &kp N0        &kp N5         &kp N7     &kp N8
-&trans  &trans     &trans        &trans        &trans         &trans      &trans    &kp PERIOD    &trans         &trans     &trans         &trans
-                                 &trans        &trans         &trans      &trans    &trans        &trans
+        &kp MINUS     &kp LS(STAR)  &kp LS(DLLR)  &kp LS(POUND)  &kp LBKT    &kp RBKT  &kp LS(EXCL)  &kp LS(PRCNT)  &kp EQUAL  &kp LS(EQUAL)
+        &kp NUMBER_4  &kp N3        &kp N2        &kp N1         &kp N0      &kp N9    &kp N5        &kp NUMBER_6   &kp N7     &kp N8
+&trans  &trans        &trans        &trans        &trans         &trans      &trans    &kp PERIOD    &trans         &trans     &trans         &trans
+                                    &trans        &trans         &trans      &trans    &trans        &trans
             >;
 
             label = "NUMSYM";
@@ -170,6 +175,15 @@
          &kp LSHFT  &kp A         &kp W   &kp D      &kp N2    &trans  &trans  &trans  &trans  &trans
 &kp TAB  &kp M      &kp X         &kp S   &kp C      &kp B     &trans  &trans  &trans  &trans  &trans  &trans
                                   &kp N3  &kp SPACE  &kp Z     &trans  &trans  &trans
+            >;
+        };
+
+        BLTH_CTRL {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
